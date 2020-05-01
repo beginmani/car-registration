@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-
-
 
 class CarDetail extends Component {
 
     render() {
 
         return(
-            <ul >
+           <div>
                 <li>
                     {this.props.carinfo.name}
                 </li>
-            </ul>
+                <li>
+                    {this.props.carinfo.price}
+                </li>
+                <li><img src={this.props.carinfo.img} alt="Car img"/></li>
+                <li>
+                    {this.props.carinfo.booked}
+                </li>
+            </div>
         );
 
     }

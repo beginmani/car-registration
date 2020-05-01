@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import CarsPage from './Components/CarsPage';
+import CarDetail from './Components/CarDetail';
 import data from './Components/cars.json';
 
 class App extends Component {
@@ -16,12 +16,19 @@ class App extends Component {
     componentWillMount(){
         this.setState({ cars: data });
     }
+   
+
+    renderCars() {
+        return this.state.cars.map((carinfo,index) => {
+           return <CarDetail key={index} carinfo={carinfo} />
+        })
+      }
 
     render() {
         
         return (
             <div>
-                <CarsPage cars={this.state.cars} />
+                {this.renderCars()}
             </div>
         );
     }
