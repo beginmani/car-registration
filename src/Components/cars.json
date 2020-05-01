@@ -7,7 +7,7 @@
       "price": 135000,
       "vehicleNumber": "",
       "seatingCapacity": "",
-      "bookingStatus": ""
+      "bookingStatus": false
     },
     {
       "img": "../images/250px-Nissan_GT-R.jpg",
@@ -17,7 +17,7 @@
       "price": 80000,
       "vehicleNumber": "",
       "seatingCapacity": "",
-      "bookingStatus": ""
+      "bookingStatus": false
     },
     {
       "img": "../images/250px-BMW_M3_E92.jpg",
@@ -27,7 +27,7 @@
       "price": 60500,
       "vehicleNumber": "",
       "seatingCapacity": "",
-      "bookingStatus": ""
+      "bookingStatus": false
     },
     {
       "img": "../images/250px-Audi_S5.jpg",
@@ -37,7 +37,7 @@
 
       "vehicleNumber": "",
       "seatingCapacity": "",
-      "bookingStatus": ""
+      "bookingStatus": false
     },
     {
       "img": "../images/250px-2007_Audi_TT_Coupe.jpg",
@@ -47,6 +47,6 @@
       "price": 40000,
       "vehicleNumber": "",
       "seatingCapacity": "",
-      "bookingStatus": ""
+      "bookingStatus": false
     }
 ]

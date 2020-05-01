@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import CarDetail from './Components/CarDetail';
+import FirstCarPage from './Components/FirstCarPage';
 import data from './Components/cars.json';
+import {Route, IndexRoute} from 'react-router';
 
 class App extends Component {
     constructor(){
     super();
     this.state = {
             cars: [],
-            customerDetails:[]
-
         }
     }
 
@@ -20,7 +19,7 @@ class App extends Component {
 
     renderCars() {
         return this.state.cars.map((carinfo,index) => {
-           return <CarDetail key={index} carinfo={carinfo} />
+           return <FirstCarPage key={index} carinfo={carinfo} />
         })
       }
 
@@ -29,7 +28,7 @@ class App extends Component {
         return (
             <div>
                 {this.renderCars()}
-            </div>
+             </div>
         );
     }
 }

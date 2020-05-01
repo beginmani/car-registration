@@ -10,10 +10,6 @@ class RegisterCar extends Component {
         }
     }
 
-    static defaultProps = {
-        
-    }
-
     handleSubmit(event){
 
         console.log(this.refs.unit.value);
