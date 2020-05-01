@@ -1,5 +1,4 @@
-{
-  "data": [
+[
     {
       "img": "./images/2004_Porsche_911_Carrera_type_997.jpg",
       "name": "Porsche 911",
@@ -35,7 +34,7 @@
       "name": "Audi S5",
       "manufacturer": "Audi",
       "model": "S5",
-      "price": 53000,
+
       "vehicleNumber": "",
       "seatingCapacity": "",
       "bookingStatus": ""
@@ -50,5 +49,4 @@
       "seatingCapacity": "",
       "bookingStatus": ""
     }
-  ]
-}
+]

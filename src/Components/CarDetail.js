@@ -3,20 +3,14 @@ import PropTypes from 'prop-types';
 
 
 
-class CarList extends Component {
+class CarDetail extends Component {
 
     render() {
 
         return(
             <ul >
                 <li>
-                    {this.props.car.name}
-                </li>
-                <li>
-                <img className="specs-icon" alt={"Car Image"} src={this.props.car.img} />
-                </li>
-                <li>
-                        {this.props.car.price}
+                    {this.props.carinfo.name}
                 </li>
             </ul>
         );
@@ -24,7 +18,4 @@ class CarList extends Component {
     }
 }
 
-CarList.propTypes = {
-    car: PropTypes.object.isRequired
-}
-export default CarList;
+export default CarDetail;

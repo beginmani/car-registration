@@ -13,12 +13,12 @@ class App extends Component {
         }
     }
 
-    componentDidlMount() {
+    componentWillMount(){
         this.setState({ cars: data });
-      }
+    }
 
- 
     render() {
+        
         return (
             <div>
                 <CarsPage cars={this.state.cars} />
