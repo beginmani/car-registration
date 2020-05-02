@@ -12,9 +12,14 @@ class App extends Component {
     render() {
         
         return (
-            <div>
+            <div>   
+            <React.Fragment>
+                    <Router>
+          
                  <Route path="/home" exact component={CarRegForm}/>
                         <Route path="/dash" component={CarList}/>
+          </Router>
+          </React.Fragment>
              </div>
         );
     }
