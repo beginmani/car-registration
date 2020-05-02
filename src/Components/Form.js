@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import PhoneInput from 'react-phone-input-2'
-import 'react-phone-input-2/lib/style.css'
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Planning from "./Dates";
@@ -45,10 +45,6 @@ class CarRegForm extends Component {
       this.setState({ message: "names cannot be null" });
     } else if (!this.state.rphone) {
       this.setState({ message: "Phone Number cannot be null" });
-    } else if (!this.state.ridate) {
-      this.setState({ message: "Issue Date cannot be null" });
-    } else if (!this.state.rrdate) {
-      this.setState({ message: "Return Date cannot be null" });
     } else {
       alert("Form filled");
       window.location.href = "http://localhost:3000/home";
@@ -86,18 +82,18 @@ class CarRegForm extends Component {
           </div>
           <div className="form-group">
             <label>Renter Phone: </label>
-           <PhoneInput
-                        className="phonenumbers"
-                            country={'in'}
-  value={this.state.rphone}
-  onChange={phone => this.setState({ rphone:phone })}
-/>
+            <PhoneInput
+              className="phonenumbers"
+              country={"in"}
+              value={this.state.rphone}
+              onChange={(phone) => this.setState({ rphone: phone })}
+            />
           </div>
 
           <div className="form-group">
             <label>Renter Issue Date: </label>
             <br />
-            <Route path="/home" component={Planning} />
+            <Route path="/form" component={Planning} />
           </div>
 
           <div>{this.state.message}</div>
