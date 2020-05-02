@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Planning from "./Dates";
@@ -50,6 +51,7 @@ class CarRegForm extends Component {
       this.setState({ message: "Return Date cannot be null" });
     } else {
       alert("Form filled");
+      window.location.href = "http://localhost:3000/home";
       console.log(`Form submitted:`);
       console.log(`Renter Name: ${this.state.rname}`);
       console.log(`Renter Phone Number: ${this.state.rphone}`);
@@ -84,12 +86,12 @@ class CarRegForm extends Component {
           </div>
           <div className="form-group">
             <label>Renter Phone: </label>
-            <input
-              type="text"
-              className="form-control"
-              value={this.state.rphone}
-              onChange={this.onChangeRenterPhone}
-            />
+           <PhoneInput
+                        className="phonenumbers"
+                            country={'in'}
+  value={this.state.rphone}
+  onChange={phone => this.setState({ rphone:phone })}
+/>
           </div>
 
           <div className="form-group">
