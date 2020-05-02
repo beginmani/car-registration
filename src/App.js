@@ -12,8 +12,8 @@ class App extends Component {
       <div>
         <React.Fragment>
           <Router>
-            <Route path="/home" exact component={CarRegForm} />
-            <Route path="/dash" component={CarList} />
+            <Route path="/form" exact component={CarRegForm} />
+            <Route path="/" component={CarList} />
           </Router>
         </React.Fragment>
       </div>
