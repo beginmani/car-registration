@@ -1,36 +1,35 @@
-import React, { Component } from 'react';
-import './App.css';
-import FirstCarPage from './Components/FirstCarPage';
-import data from './Components/cars.json';
-import {Route, IndexRoute} from 'react-router';
+import React, { Component } from "react";
+import "./App.css";
+import FirstCarPage from "./Components/FirstCarPage";
+import data from "./Components/cars.json";
+import { Route, IndexRoute } from "react-router";
+import { Row } from "react-bootstrap";
 
 class App extends Component {
-    constructor(){
+  constructor() {
     super();
     this.state = {
-            cars: [],
-        }
-    }
+      cars: [],
+    };
+  }
 
-    componentWillMount(){
-        this.setState({ cars: data });
-    }
-   
+  componentWillMount() {
+    this.setState({ cars: data });
+  }
 
-    renderCars() {
-        return this.state.cars.map((carinfo,index) => {
-           return <FirstCarPage key={index} carinfo={carinfo} />
-        })
-      }
+  renderCars() {
+    return this.state.cars.map((carinfo, index) => {
+      return (
+        <Row>
+          <FirstCarPage key={index} carinfo={carinfo} />
+        </Row>
+      );
+    });
+  }
 
-    render() {
-        
-        return (
-            <div>
-                {this.renderCars()}
-             </div>
-        );
-    }
+  render() {
+    return <div>{this.renderCars()}</div>;
+  }
 }
 
 export default App;
