@@ -13,7 +13,7 @@ class App extends Component {
         <React.Fragment>
           <Router>
             <Route path="/form" exact component={CarRegForm} />
-            <Route path="/" component={CarList} />
+            <Route path="/home" component={CarList} />
           </Router>
         </React.Fragment>
       </div>
