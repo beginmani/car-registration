@@ -1,15 +1,5 @@
 [
   {
-    "img": " /static/media/2004_Porsche_911_Carrera_type_997.eccae582.jpg",
-    "name": "Porsche 911",
-    "manufacturer": "Porsche",
-    "model": "911",
-    "price": 135000,
-    "vehicleNumber": "",
-    "seatingCapacity": "",
-    "bookingStatus": false
-  },
-  {
     "img": "/static/media/250px-Nissan_GT-R.10d11f39.jpg",
     "name": "Nissan GT-R",
     "manufacturer": "Nissan",
