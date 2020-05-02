@@ -2,32 +2,25 @@ import React, { Component } from 'react';
 import './App.css';
 import FirstCarPage from './Components/FirstCarPage';
 import data from './Components/cars.json';
-import {Route, IndexRoute} from 'react-router';
-
+// import {Route, IndexRoute} from 'react-router';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import CarRegForm from './Components/Form';
+import CarList from './Components/CarList';
+import Register from './Components/Register';
 class App extends Component {
-    constructor(){
-    super();
-    this.state = {
-            cars: [],
-        }
-    }
-
-    componentWillMount(){
-        this.setState({ cars: data });
-    }
    
-
-    renderCars() {
-        return this.state.cars.map((carinfo,index) => {
-           return <FirstCarPage key={index} carinfo={carinfo} />
-        })
-      }
 
     render() {
         
         return (
             <div>
-                {this.renderCars()}
+                <React.Fragment>
+                    <Router>
+                        <Route path="/form" exact component={CarRegForm}/>
+                        <Route path="/" component={CarList}/>
+                    
+                    </Router>
+                </React.Fragment>
              </div>
         );
     }
