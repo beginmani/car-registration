@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Image, Button, Card, Col } from "react-bootstrap";
+import { Image, Button, Card, Col,Nav } from "react-bootstrap";
 import Register from "./Register";
 //import img1 from " ../images/2004_Porsche_911_Carrera_type_997.jpg";
 import img2 from "../images/250px-Nissan_GT-R.jpg";
@@ -54,10 +54,10 @@ class FirstCarPage extends Component {
             <Card.Title>{this.props.carinfo.price}</Card.Title>
 
             <div>
-              <Button variant="primary" size="xs">
+            <Nav.Link  href="/seeDetail">   <Button variant="primary" size="xs">
                 See Details
-              </Button>{" "}
-              <Button
+              </Button>{" "}</Nav.Link>
+           <Nav.Link  href="/form">   <Button
                 variant="primary"
                 size="xs"
                 disabled={this.state.bookingStatus}
@@ -65,7 +65,7 @@ class FirstCarPage extends Component {
               >
                 {" "}
                 Book Now
-              </Button>
+              </Button></Nav.Link>
             </div>
           </Card.Body>
         </Card>
