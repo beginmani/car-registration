@@ -9,22 +9,13 @@
     "seatingCapacity": "",
     "bookingStatus": false
   },
-  {
-    "img": "/static/media/250px-BMW_M3_E92.af2bfdce.jpg",
-    "name": "BMW M3",
-    "manufacturer": "BMW",
-    "model": "M3",
-    "price": 60500,
-    "vehicleNumber": "",
-    "seatingCapacity": "",
-    "bookingStatus": false
-  },
+
   {
     "img": "/static/media/250px-Audi_S5.800ef668.jpg",
     "name": "Audi S5",
     "manufacturer": "Audi",
     "model": "S5",
-
+    "price": 50000,
     "vehicleNumber": "",
     "seatingCapacity": "",
     "bookingStatus": false
