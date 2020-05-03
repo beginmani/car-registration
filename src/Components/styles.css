@@ -13,3 +13,22 @@ label {
   min-width: 300px;
   padding: 6px 12px;
 }
+.App-header
+{
+min-height: 1000px;
+}
+.btn.btn-success.btn-primary
+{
+    margin:300px 0px 0px 574px;
+}
+.Welcome{
+    color:white;
+    font-size: 32px;
+    margin:0px 0px 0px 440px;
+}
+h6
+{
+    color:white;
+    font-size: 32px;
+    margin:0px 0px 0px 540px;  
+}
