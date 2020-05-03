@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import CarRegForm from "./Components/Form";
 import CarList from "./Components/CarList";
 import SeeDetails from "./Components/SeeDetails";
+
 class App extends Component {
   render() {
     return (
